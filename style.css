@@ -1,0 +1,24 @@
+/* Logo img */
+header img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add margin around the logo */
+}
+
+/* Social Media Icon */
+header img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none;
+}
