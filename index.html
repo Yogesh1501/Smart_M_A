@@ -1,105 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Mind Abascus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar with Hamburger Menu</title>
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
---> 
 
-    
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
-  <!--stricky header top-->  
-  <div id ="border-img" class="ad-co-div-h">
-    <div class="ad-co">
-      <a href=""> <i class="fa-solid fa-location-dot" style="color: #094f7e;"></i>&nbsp;<span style="color: #094f7e">Moshi, Pune-412105</span></a>
-    </div>
-    <div class="ad-co">
-      <a href="tel:7709087889" class="phone"><i class="fa-solid fa-phone" style="color:#094f7e;"></i><span style="color: #094f7e">+91 7709087889 </span></a>
-    </div>
-    <div class="ad-co">
-      <a href="mailto:smartmindabascus@gmail.com" class="mail">
-        <i class="fa-solid fa-envelope" style="color: #094f7e;"></i>&nbsp;
-          <span class="ad-co-3" style="color: #094f7e"><span>smartmindabascus@gmail.com</span>
-      </a>  
-    </div>
+
+<div class="navbar">
+  <a href="#" class="navbar-brand">
+    <img src="./img/SMA_Logo.png" alt="Logo">
+  </a>
+  <!-- Hamburger button -->
+  <div class="hamburger-btn" onclick="toggleMenu()">
+    &#9776;
   </div>
-    <!--Header Section Start-->
- 
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+  <!-- Navigation links -->
+  <div class="navbar-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Gallery</a>
+    <a href="#">Why Us</a>
+    <a href="#">Contact</a>
+  </div>
+  <!-- Social media icons -->
+  <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/+917709087889?text=Hello%20there!" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
 
-            <!--
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            -->
-            <div>
-                <img src="./img/SMA_Logo.png" alt="Your Logo">
-            </div>
+<!-- Collapsed menu for smaller screens -->
+<div class="collapsed" id="collapsed-menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Courses</a>
+  <a href="#">Gallery</a>
+  <a href="#">Why Us</a>
+  <a href="#">Contact</a>
+</div>
 
-            
-            <span class="ml-3 text-xl">Smart Mind Abascus</span>
-          </a>
+    <!-- Image slider -->
+    <div class="slider-container">
+      <img class="slider-image active" src="img/img_6.jpeg" alt="Slide 1">
+      <img class="slider-image" src="img/img_2.jpeg" alt="Slide 2">
+      <img class="slider-image" src="img/img_3.jpeg" alt="Slide 3">
+      <img class="slider-image" src="img/img_4.jpeg" alt="Slide 4">
+      <img class="slider-image" src="img/img_5.jpeg" alt="Slide 5">
+  </div>
 
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          
-            <a href="#" class="mr-5">Home</a>
-            <a href="#" class="mr-5">About </a>
-            <a href="#" class="mr-5">Courses </a>
-            <a href="#" class="mr-5">Gallery </a>
-            <a href="#" class="mr-5">Why Us </a>
-            <a href="#" class="mr-5">Contact </a>
-          </nav>
-          
-          <!-- Social Media Icon -->
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/+917709087889?text=Hello%20there!" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-            <!--<div>
-              <span class="inline-flex">
-                <a class="text-gray-500">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                  </svg>
-                </a>
-              </span>
-            </div>-->
-            
-            
-        </div>
-    </header>
-    <!--Header Section End-->
+
 
     <!--Content Section Start-->
     <!--About Start-->
@@ -472,39 +433,13 @@
           </div>
         </div>
      </footer>
-    <!--Footer Section End-->
+
+
+     <script src="script.js"></script>
+     
+    <!-- Font Awesome CDN script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
 </body>
 </html>
-
-
-
-
-<!--Welcome to Abascus Academy
-
-At Abascus Academy, we believe in nurturing young minds to become future leaders and innovators. With a commitment to excellence in education and a passion for empowering students, we strive to provide a transformative learning experience that goes beyond traditional academics.
-
-Our Mission
-
-Our mission at Abascus Academy is to inspire a love for learning, foster critical thinking skills, and cultivate a culture of curiosity and exploration. Through personalized attention, innovative teaching methods, and a supportive learning environment, we aim to empower students to reach their full potential and become lifelong learners.
-
-What Sets Us Apart
-
-Holistic Approach: We believe in educating the whole child, emphasizing not only academic excellence but also social-emotional development, creative expression, and physical well-being.
-
-Innovative Curriculum: Our curriculum is designed to engage students in hands-on learning experiences, incorporating interdisciplinary projects, real-world applications, and technology integration to prepare them for success in the 21st century.
-
-Expert Faculty: Our dedicated team of educators is passionate about teaching and committed to providing personalized attention to every student. With expertise in their respective fields, our faculty members inspire, motivate, and mentor students to achieve their goals.
-
-Community Engagement: At Abascus Academy, we recognize the importance of community involvement in education. We actively collaborate with parents, local organizations, and industry partners to create meaningful learning opportunities and enriching experiences for our students.
-
-Our Values
-
-Excellence: We strive for excellence in everything we do, setting high standards for academic achievement, character development, and personal growth.
-
-Integrity: We uphold the highest ethical standards, fostering honesty, integrity, and respect for others in all aspects of our academic and community life.
-
-Inclusivity: We celebrate diversity and embrace inclusivity, creating a welcoming and supportive environment where every student feels valued, accepted, and empowered to succeed.
-
-Join Us
-
-We invite you to join the Abascus Academy community and embark on a journey of discovery, growth, and endless possibilities. Together, we can inspire greatness and shape the future leaders of tomorrow.-->

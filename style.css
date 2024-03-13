@@ -46,6 +46,10 @@ header{
     padding: 0;
     margin: 0;
   }
+
+  .logo{
+    width: 50%;
+  }
   
   #borderimg {
     border: 10px solid transparent;
@@ -316,3 +320,194 @@ ul{
       width: calc(50% - 20px); 
     }
   }
+
+
+
+  /* Basic styles for the navigation bar */
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+  }
+
+  /* Hamburger button styles */
+  .hamburger-btn {
+    display: none; /* Initially hide on larger screens */
+    cursor: pointer;
+  }
+
+  /* Styling for the navigation menu when collapsed */
+  .collapsed {
+    display: none;
+    flex-direction: column; /* Display in column layout */
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .collapsed a {
+    padding: 10px 0;
+  }
+
+  /* Social media icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none;
+    color: #fff;
+}
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Hide the navigation links on smaller screens */
+    }
+
+    .hamburger-btn {
+      display: block; /* Display the hamburger button on smaller screens */
+    }
+
+    .collapsed {
+      display: flex; /* Display the collapsed menu on smaller screens */
+    }
+  }
+
+
+
+  
+
+/* Basic styles for the navigation bar */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.navbar-brand img {
+  height: 90px; /* Adjust the height of the logo as needed */
+  border-radius: 50%;
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+}
+
+/* Hamburger button styles */
+.hamburger-btn {
+  display: none; /* Initially hide on larger screens */
+  cursor: pointer;
+}
+
+/* Styling for the navigation menu when collapsed */
+.collapsed {
+  display: none;
+  flex-direction: column; /* Display in column layout */
+  background-color: #333;
+  padding: 10px;
+}
+
+.collapsed a {
+  padding: 10px 0;
+}
+
+/* Social media icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+      /* Contact information */
+      .contact-info {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          color: #fff;
+      }
+
+      /* Styling for the sticky header */
+      .sticky-header {
+          background-color: #666;
+          /* Change color as needed */
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+      }
+
+      /* Image slider */
+      .slider-container {
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          margin-top: 20px;
+      }
+
+      .slider-container img {
+          width: 100%;
+          height: auto; /* Adjust the height automatically based on width */
+          display: none;
+      }
+
+      .slider-container img.active {
+          display: block;
+      }
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide the navigation links on smaller screens */
+  }
+
+  .hamburger-btn {
+    display: block; /* Display the hamburger button on smaller screens */
+  }
+
+  .collapsed {
+    display: flex; /* Display the collapsed menu on smaller screens */
+  }
+}
