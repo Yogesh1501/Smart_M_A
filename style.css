@@ -1,6 +1,7 @@
 body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
+  
 }
 *{
 	margin:0;
@@ -139,12 +140,13 @@ ul{
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
+	left: 0%;
 	bottom: -10px;
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
+  
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -529,5 +531,16 @@ ul{
 
   .collapsed {
     display: flex; /* Display the collapsed menu on smaller screens */
+  }
+}
+
+/*media Query for Responsive website*/
+@media only screen and (max-width: 480px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 }
