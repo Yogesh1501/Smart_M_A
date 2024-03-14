@@ -130,6 +130,10 @@ ul{
    padding: 0 15px;
 }
 .footer-col h4{
+  text-decoration: underline;
+  text-decoration-color: #e91e63;
+ 
+  text-decoration-thickness: 2px;
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -137,7 +141,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
+/* .footer-col h4::before{
 	content: '';
 	position: absolute;
 	left: auto;
@@ -147,7 +151,7 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
   
-}
+} */
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
