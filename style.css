@@ -506,7 +506,7 @@ ul{
           position: relative;
           max-width: 100%;
           overflow: hidden;
-          margin-top: 20px;
+          
       }
 
       .slider-container img {
@@ -530,7 +530,7 @@ ul{
   }
 
   .collapsed {
-    display: flex; /* Display the collapsed menu on smaller screens */
+    display: none; /* Display the collapsed menu on smaller screens */
   }
 }
 
