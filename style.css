@@ -55,7 +55,9 @@ header{
   #borderimg {
     border: 10px solid transparent;
     padding: 15px;
+    /*
     border-image: url(/img/section_notch_bottom.png) 20% round;
+    /*
   }
   
   .ad-co-div-h{
@@ -274,12 +276,12 @@ ul{
     margin-bottom: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
-    background-color: #e0ffff;
+    background-color: #ffe6ff;
   }
 
   /* Styling for sub-cards */
   .sub-card {
-    background-color: #14a9e4;
+    background-color: #ffe6ff;
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -289,7 +291,7 @@ ul{
 
   /* Hover effect */
   .card:hover, .cart-3:hover {
-    background-color: #91ffff;
+    background-color: #ff4dff;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(15, 13, 13, 0.1);
   }
@@ -320,7 +322,7 @@ ul{
     margin-bottom: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
-    background-color: #e0ffff;
+    background-color: #ffe6ff;
     
   }
 
@@ -376,24 +378,6 @@ ul{
     text-decoration: none;
     color: #fff;
     padding: 0 10px;
-  }
-
-  /* Hamburger button styles */
-  .hamburger-btn {
-    display: none; /* Initially hide on larger screens */
-    cursor: pointer;
-  }
-
-  /* Styling for the navigation menu when collapsed */
-  .collapsed {
-    display: none;
-    flex-direction: column; /* Display in column layout */
-    background-color: #333;
-    padding: 10px;
-  }
-
-  .collapsed a {
-    padding: 10px 0;
   }
 
   /* Social media icons */
@@ -468,7 +452,7 @@ ul{
 .collapsed {
   display: none;
   flex-direction: column; /* Display in column layout */
-  background-color: #333;
+  background-color: white;
   padding: 10px;
 }
 
